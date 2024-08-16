@@ -1,0 +1,137 @@
+.topo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 60px;
+  background-color: #eee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  color: #fff;
+  outline: none;
+  background-color: #6F3CC3;
+  padding: 10px 15px;
+}
+
+input {
+  margin-right: 10px;
+  max-width: 380px;
+  width: 100%;
+  padding: 8px 15px;
+  display: block;
+}
+.Divinput {
+  justify-content: center;
+  margin-top: -3rem;
+  padding: 2rem;
+display: flex;
+}
+
+.localTarefas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localTarefas p {
+  color: #ccc;
+}
+
+.criadas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.infosTarefas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.criadas span {
+  background-color: #6F3CC355;
+  padding: 10px;
+  color:#6F3CC3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.concluidas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.concluidas span {
+  background-color: #BFE3D0;
+  padding: 10px;
+  color:#2D6C4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.tarefas {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.tarefas p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px 1px #ccc5;
+  padding: 20px 40px;
+  background-color: #E0DCE4;
+  border-radius: 5px;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.naoConcluida {
+  position: relative;
+}
+
+.naoConcluida::before {
+  content: '' !important;
+  top: 22px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rebeccapurple;
+  left: 10px;
+}
+.concluida {
+  text-decoration: line-through !important;
+  position: relative;
+}
+
+.concluida::before {
+  content: '' !important;
+  top: 22px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2D6C4A !important;
+  border: 1px solid rebeccapurple;
+  left: 10px;
+}
